@@ -1,0 +1,177 @@
+{
+  "recipes": [
+    {
+      "code": "BOM-PLA-175-MBK-V1",
+      "name": "PLA 哑光黑 1kg 标准配方",
+      "version": "v1",
+      "productCode": "M-FG-PLA-175-MBK",
+      "productName": "PLA 1.75mm 哑光黑耗材 1kg",
+      "productUnitWeightKg": 1,
+      "outputUnit": "卷",
+      "status": "启用",
+      "revision": 1,
+      "owner": "工艺工程",
+      "createdAt": "2026-07-01",
+      "updatedAt": "2026-07-01",
+      "materials": [
+        { "materialCode": "M-RM-PLA-VIRGIN", "materialName": "PLA 原生粒子", "usageMode": "percent", "percent": 96, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-CM-MATTE-BLK", "materialName": "哑光黑色母", "usageMode": "percent", "percent": 4, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "usageMode": "fixed", "percent": 0, "perUnitQty": 1, "unit": "个", "incomingQcRequired": true }
+      ],
+      "estimatedLosses": [
+        { "materialCode": "M-RM-PLA-VIRGIN", "materialName": "PLA 原生粒子", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-CM-MATTE-BLK", "materialName": "哑光黑色母", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "fixedLossQty": 0, "lossRatePercent": 0.5, "unit": "个" }
+      ]
+    },
+    {
+      "code": "BOM-PETG-175-CLR-V1",
+      "name": "PETG 透明 1kg 标准配方",
+      "version": "v1",
+      "productCode": "M-FG-PETG-175-CLR",
+      "productName": "PETG 1.75mm 透明耗材 1kg",
+      "productUnitWeightKg": 1,
+      "outputUnit": "卷",
+      "status": "启用",
+      "revision": 1,
+      "owner": "周宁",
+      "createdAt": "2026-06-30",
+      "updatedAt": "2026-06-30",
+      "materials": [
+        { "materialCode": "M-RM-PETG-VIRGIN", "materialName": "PETG 原生粒子", "usageMode": "percent", "percent": 99, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-AM-CLEAR-ENH", "materialName": "透明增强助剂", "usageMode": "percent", "percent": 1, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "usageMode": "fixed", "percent": 0, "perUnitQty": 1, "unit": "个", "incomingQcRequired": true }
+      ],
+      "estimatedLosses": [
+        { "materialCode": "M-RM-PETG-VIRGIN", "materialName": "PETG 原生粒子", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-AM-CLEAR-ENH", "materialName": "透明增强助剂", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "fixedLossQty": 0, "lossRatePercent": 0.5, "unit": "个" }
+      ]
+    },
+    {
+      "code": "BOM-PLA-175-WHT-V1",
+      "name": "PLA 珍珠白 1kg 标准配方",
+      "version": "v1",
+      "productCode": "M-FG-PLA-175-WHT",
+      "productName": "PLA 1.75mm 珍珠白耗材 1kg",
+      "productUnitWeightKg": 1,
+      "outputUnit": "卷",
+      "status": "启用",
+      "revision": 1,
+      "owner": "赵敏",
+      "createdAt": "2026-06-29",
+      "updatedAt": "2026-06-29",
+      "materials": [
+        { "materialCode": "M-RM-PLA-VIRGIN", "materialName": "PLA 原生粒子", "usageMode": "percent", "percent": 97, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-CM-PEARL-WHT", "materialName": "珍珠白色母", "usageMode": "percent", "percent": 3, "unit": "kg", "incomingQcRequired": true },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "usageMode": "fixed", "percent": 0, "perUnitQty": 1, "unit": "个", "incomingQcRequired": true }
+      ],
+      "estimatedLosses": [
+        { "materialCode": "M-RM-PLA-VIRGIN", "materialName": "PLA 原生粒子", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-CM-PEARL-WHT", "materialName": "珍珠白色母", "fixedLossQty": 0, "lossRatePercent": 2, "unit": "kg" },
+        { "materialCode": "M-PKG-SPOOL-1KG", "materialName": "小盘线轴 1kg", "fixedLossQty": 0, "lossRatePercent": 0.5, "unit": "个" }
+      ]
+    }
+  ],
+  "processTemplates": [
+    {
+      "code": "PRC2-WIRE-DRAWING-REWIND-V1",
+      "name": "拉丝大盘复绕标准工艺",
+      "version": "v1",
+      "routeType": "大盘复绕",
+      "productFamily": "拉丝复绕类成品",
+      "lineTypes": ["拉丝机", "复绕机", "包装工位"],
+      "status": "启用",
+      "owner": "周宁",
+      "createdBy": "周宁",
+      "updatedBy": "周宁",
+      "revision": 1,
+      "createdAt": "2026-07-08 09:00",
+      "updatedAt": "2026-07-08",
+      "stepCodes": ["P2-STEP-MATERIAL-ISSUE", "P2-STEP-STARTUP", "P2-STEP-FIRST-INSPECTION", "P2-STEP-WIP-REPORT-LARGE-REEL", "P2-STEP-WIP-QC", "P2-STEP-FINISHED-REPORT-SMALL-REEL", "P2-STEP-FINISHED-QC", "P2-STEP-PACKAGING", "P2-STEP-INBOUND-SAMPLING", "P2-STEP-FINISHED-INBOUND"],
+      "temperatureTolerance": "按工艺卡",
+      "temperatureZones": [
+        { "name": "水槽", "value": "60", "tolerance": "按工艺卡" },
+        { "name": "10区", "value": "200", "tolerance": "按工艺卡" },
+        { "name": "9区", "value": "210", "tolerance": "按工艺卡" },
+        { "name": "4区", "value": "200", "tolerance": "按工艺卡" },
+        { "name": "3区", "value": "195", "tolerance": "按工艺卡" },
+        { "name": "2区", "value": "190", "tolerance": "按工艺卡" },
+        { "name": "1区", "value": "185", "tolerance": "按工艺卡" },
+        { "name": "13区", "value": "210", "tolerance": "按工艺卡" },
+        { "name": "12区", "value": "200", "tolerance": "按工艺卡" },
+        { "name": "11区", "value": "210", "tolerance": "按工艺卡" },
+        { "name": "8区", "value": "200", "tolerance": "按工艺卡" },
+        { "name": "7区", "value": "195", "tolerance": "按工艺卡" },
+        { "name": "6区", "value": "190", "tolerance": "按工艺卡" },
+        { "name": "5区", "value": "185", "tolerance": "按工艺卡" }
+      ]
+    },
+    {
+      "code": "PRC2-EXTRUSION-V1",
+      "name": "挤出成品标准工艺",
+      "version": "v1",
+      "routeType": "直接收卷",
+      "productFamily": "挤出类成品",
+      "lineTypes": ["挤出 A 线", "挤出 B 线"],
+      "status": "启用",
+      "owner": "周宁",
+      "createdBy": "周宁",
+      "updatedBy": "周宁",
+      "revision": 1,
+      "createdAt": "2026-07-01 09:00",
+      "updatedAt": "2026-07-01",
+      "stepCodes": ["P2-STEP-MATERIAL-ISSUE", "P2-STEP-STARTUP", "P2-STEP-FIRST-INSPECTION", "P2-STEP-FINISHED-REPORT-SMALL-REEL", "P2-STEP-FINISHED-QC", "P2-STEP-PACKAGING", "P2-STEP-INBOUND-SAMPLING", "P2-STEP-FINISHED-INBOUND"],
+      "temperatureTolerance": "±5℃",
+      "temperatureZones": [
+        { "name": "水槽", "value": "60", "tolerance": "±5℃" },
+        { "name": "10区", "value": "200", "tolerance": "±5℃" },
+        { "name": "9区", "value": "210", "tolerance": "±5℃" },
+        { "name": "4区", "value": "200", "tolerance": "±5℃" },
+        { "name": "3区", "value": "195", "tolerance": "±5℃" },
+        { "name": "2区", "value": "190", "tolerance": "±5℃" },
+        { "name": "1区", "value": "185", "tolerance": "±5℃" },
+        { "name": "13区", "value": "210", "tolerance": "±5℃" },
+        { "name": "12区", "value": "200", "tolerance": "±5℃" },
+        { "name": "11区", "value": "210", "tolerance": "±5℃" },
+        { "name": "8区", "value": "200", "tolerance": "±5℃" },
+        { "name": "7区", "value": "195", "tolerance": "±5℃" },
+        { "name": "6区", "value": "190", "tolerance": "±5℃" },
+        { "name": "5区", "value": "185", "tolerance": "±5℃" }
+      ]
+    },
+    {
+      "code": "PRC2-PETG-EXTRUSION-V1",
+      "name": "PETG 透明耗材挤出工艺",
+      "version": "v1",
+      "routeType": "直接收卷",
+      "productFamily": "PETG 挤出耗材",
+      "lineTypes": ["挤出 A 线", "挤出 B 线"],
+      "status": "启用",
+      "owner": "周宁",
+      "createdBy": "周宁",
+      "updatedBy": "周宁",
+      "revision": 1,
+      "createdAt": "2026-06-30 09:00",
+      "updatedAt": "2026-06-30",
+      "stepCodes": ["P2-STEP-MATERIAL-ISSUE", "P2-STEP-STARTUP", "P2-STEP-FIRST-INSPECTION", "P2-STEP-FINISHED-REPORT-SMALL-REEL", "P2-STEP-FINISHED-QC", "P2-STEP-PACKAGING", "P2-STEP-INBOUND-SAMPLING", "P2-STEP-FINISHED-INBOUND"],
+      "temperatureTolerance": "±5℃",
+      "temperatureZones": [
+        { "name": "水槽", "value": "50", "tolerance": "±5℃" },
+        { "name": "10区", "value": "235", "tolerance": "±5℃" },
+        { "name": "9区", "value": "240", "tolerance": "±5℃" },
+        { "name": "4区", "value": "245", "tolerance": "±5℃" },
+        { "name": "3区", "value": "240", "tolerance": "±5℃" },
+        { "name": "2区", "value": "235", "tolerance": "±5℃" },
+        { "name": "1区", "value": "225", "tolerance": "±5℃" },
+        { "name": "13区", "value": "245", "tolerance": "±5℃" },
+        { "name": "12区", "value": "245", "tolerance": "±5℃" },
+        { "name": "11区", "value": "245", "tolerance": "±5℃" },
+        { "name": "8区", "value": "245", "tolerance": "±5℃" },
+        { "name": "7区", "value": "240", "tolerance": "±5℃" },
+        { "name": "6区", "value": "235", "tolerance": "±5℃" },
+        { "name": "5区", "value": "225", "tolerance": "±5℃" }
+      ]
+    }
+  ]
+}

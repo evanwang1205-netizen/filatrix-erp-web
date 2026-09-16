@@ -1,0 +1,45 @@
+services:
+  filatrix-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: filatrix-erp-api
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+      FILATRIX_API_HOST: 0.0.0.0
+      FILATRIX_API_PORT: 5175
+      FILATRIX_DATA_FILE: /data/erp-data.json
+    volumes:
+      - filatrix_erp_data:/data
+    networks:
+      - filatrix_erp
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:5175/api/health >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  filatrix-web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        VITE_API_BASE: /api
+    container_name: filatrix-erp-web
+    restart: unless-stopped
+    depends_on:
+      filatrix-api:
+        condition: service_healthy
+    ports:
+      - "${FILATRIX_WEB_PORT:-80}:80"
+    networks:
+      - filatrix_erp
+
+volumes:
+  filatrix_erp_data:
+
+networks:
+  filatrix_erp:
+    driver: bridge

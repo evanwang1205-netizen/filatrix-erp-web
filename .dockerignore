@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+.git
+*.log
+*.err
+*.out
+*.local
+coverage
+.env
+.env.*
+tmp
+output
+server/data/*.json
+server/data/*.tmp

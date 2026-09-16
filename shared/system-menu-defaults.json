@@ -1,0 +1,165 @@
+[
+  {
+    "code": "MENU-SALES",
+    "name": "销售",
+    "menuKey": "sales",
+    "path": "/sales/quotes",
+    "permissionCode": "PERM-SALES-EDIT",
+    "description": "报价、订单、售后、价格记录和成品库存速查。",
+    "children": [
+      { "code": "MENU-SALES-QUOTES", "name": "报价单", "path": "/sales/quotes", "permissionCode": "PERM-SALES-EDIT", "description": "销售报价单列表与新建。" },
+      { "code": "MENU-SALES-ORDERS", "name": "销售订单", "path": "/sales/orders", "permissionCode": "PERM-SALES-EDIT", "description": "销售订单内容、确认和订单跟进。" },
+      { "code": "MENU-SALES-AFTER-SALES", "name": "销售售后", "path": "/sales/after-sales", "permissionCode": "PERM-SALES-EDIT", "description": "销售退换补、返工、折让和客户反馈处理入口。" },
+      { "code": "MENU-SALES-PRICES", "name": "销售价格记录", "path": "/sales/prices", "permissionCode": "PERM-SALES-EDIT", "description": "销售历史价格记录查询。" },
+      { "code": "MENU-SALES-INVENTORY", "name": "成品库存速查", "path": "/sales/inventory", "permissionCode": "PERM-SALES-EDIT", "description": "销售侧成品库存速查。" }
+    ]
+  },
+  {
+    "code": "MENU-PURCHASE",
+    "name": "采购",
+    "menuKey": "purchase",
+    "path": "/purchase/requisitions",
+    "permissionCode": "PERM-PURCHASE-EDIT",
+    "description": "采购需求、采购建议、采购订单、采购售后和采购价格记录。",
+    "children": [
+      { "code": "MENU-PURCHASE-REQUISITIONS", "name": "采购需求", "path": "/purchase/requisitions", "permissionCode": "PERM-PURCHASE-EDIT", "description": "内部采购需求的提出、确认与转采购跟踪。" },
+      { "code": "MENU-PURCHASE-SUGGESTIONS", "name": "采购建议", "path": "/purchase/suggestions", "permissionCode": "PERM-PURCHASE-EDIT", "description": "按物料汇总开放需求、已下单数量、建议采购量与可选供应商，仅供采购决策参考。" },
+      { "code": "MENU-PURCHASE-ORDERS", "name": "采购订单", "path": "/purchase/orders", "permissionCode": "PERM-PURCHASE-EDIT", "description": "采购订单列表、确认与履约跟进。" },
+      { "code": "MENU-PURCHASE-AFTER-SALES", "name": "采购售后", "path": "/purchase/after-sales", "permissionCode": "PERM-PURCHASE-EDIT", "description": "采购退换货、补发、扣款和供应商反馈处理入口。" },
+      { "code": "MENU-PURCHASE-PRICES", "name": "采购价格记录", "path": "/purchase/prices", "permissionCode": "PERM-PURCHASE-EDIT", "description": "采购历史价格记录查询。" }
+    ]
+  },
+  {
+    "code": "MENU-WAREHOUSE",
+    "name": "仓库",
+    "menuKey": "warehouse",
+    "path": "/warehouse/purchase-receipts",
+    "permissionCode": "PERM-WAREHOUSE-VIEW",
+    "description": "入库、出库、调拨、盘点、库存查询和流水。",
+    "children": [
+      { "code": "MENU-WAREHOUSE-RECEIPTS", "name": "采购入库", "path": "/warehouse/purchase-receipts", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "采购到货登记、拒收/异常暂存、质检等待与分批正式入库。" },
+      { "code": "MENU-WAREHOUSE-SALES-ISSUES", "name": "销售出库", "path": "/warehouse/sales-issues", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "销售出库单列表与出库过账。" },
+      { "code": "MENU-WAREHOUSE-PRODUCTION-ISSUES", "name": "生产领料", "path": "/warehouse/production-issues", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "按已下达生产安排和物料分配执行领料出库。" },
+      { "code": "MENU-WAREHOUSE-PRODUCTION-RETURNS", "name": "生产退料", "path": "/warehouse/production-returns", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "按原领料记录或退料申请执行退料入库。" },
+      { "code": "MENU-WAREHOUSE-PRODUCTION-RECEIPTS", "name": "完工入库", "path": "/warehouse/production-receipts", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "按质检放行的生产批次执行完工入库。" },
+      { "code": "MENU-WAREHOUSE-AFTER-SALES", "name": "售后作业", "path": "/warehouse/after-sales", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "统一承接销售退货、补发换货、采购退货和供应商补发收货任务。" },
+      { "code": "MENU-WAREHOUSE-OTHER-MOVES", "name": "其他出入库", "path": "/warehouse/other-moves", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "样品、报废等其他出入库。" },
+      { "code": "MENU-WAREHOUSE-TRANSFERS", "name": "库存调拨", "path": "/warehouse/transfers", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "仓库间库存调拨。" },
+      { "code": "MENU-WAREHOUSE-STOCKTAKES", "name": "库存盘点", "path": "/warehouse/stocktakes", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "盘点计划与差异记录。" },
+      { "code": "MENU-WAREHOUSE-INVENTORY", "name": "库存查询", "path": "/warehouse/inventory", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "库存数量、批次、库位和来源查询。" },
+      { "code": "MENU-WAREHOUSE-INVENTORY-ALERTS", "name": "库存预警", "path": "/warehouse/inventory-alerts", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "补货建议、待处理库存、效期风险和库存数据异常。" },
+      { "code": "MENU-WAREHOUSE-LEDGER", "name": "库存流水", "path": "/warehouse/stock-ledger", "permissionCode": "PERM-WAREHOUSE-VIEW", "description": "库存出入库流水查询。" }
+    ]
+  },
+  {
+    "code": "MENU-PRODUCTION",
+    "name": "生产",
+    "menuKey": "production",
+    "path": "/production/workbench",
+    "permissionCode": "PERM-PRODUCTION-VIEW",
+    "description": "围绕生产任务、工单、生产批次、售后返修、生产配方、生产工艺和生产异常组织执行。",
+    "children": [
+      { "code": "MENU-PRODUCTION-WORKBENCH", "name": "生产工作台", "path": "/production/workbench", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "集中处理当前角色的生产待办和异常。" },
+      { "code": "MENU-PRODUCTION-TASKS", "name": "生产任务", "path": "/production/tasks", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "承接生产需求并控制待建工单数量。" },
+      { "code": "MENU-PRODUCTION-MATERIAL-REQUESTS", "name": "备料申请", "path": "/production/material-requests", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "处理任务备料缺口与补料申请。" },
+      { "code": "MENU-PRODUCTION-WORK-ORDERS", "name": "生产工单", "path": "/production/work-orders", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "冻结本次生产使用的配方、工艺、数量和交期。" },
+      { "code": "MENU-PRODUCTION-EXECUTION-CARDS", "name": "生产批次", "path": "/production/execution-cards", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "追踪每个实际生产批次的领料、报工、质检、包装和入库。" },
+      { "code": "MENU-PRODUCTION-AFTER-SALES", "name": "售后返修", "path": "/production/after-sales", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "承接销售售后的维修、返工、重新生产和完成结果。" },
+      { "code": "MENU-PRODUCTION-EXCEPTIONS", "name": "生产异常", "path": "/production/exceptions", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "处理缺料、设备、停机和现场执行异常；质量处置在质检模块闭环。" },
+      { "code": "MENU-PRODUCTION-LOSS-LEDGER", "name": "损耗台账", "path": "/production/loss-ledger", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "按工单、批次、工序和责任归集生产损耗。" },
+      { "code": "MENU-PRODUCTION-RECIPES", "name": "生产配方", "path": "/production/recipes", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "维护成品投料组成、固定用量和预估损耗。" },
+      { "code": "MENU-PRODUCTION-PROCESS-TEMPLATES", "name": "生产工艺", "path": "/production/process-templates", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "维护有序工艺阶段、关键参数、质量计划和完成条件。" },
+      { "code": "MENU-PRODUCTION-PROCESS-STEPS", "name": "系统动作", "path": "/production/process-steps", "permissionCode": "PERM-PRODUCTION-VIEW", "description": "查看系统固定能力、责任域、输入输出和阻断规则。" }
+    ]
+  },
+  {
+    "code": "MENU-QUALITY",
+    "name": "质检",
+    "menuKey": "quality",
+    "path": "/quality/workbench",
+    "permissionCode": "PERM-QUALITY-VIEW",
+    "description": "来料质检、生产质检、售后检验、质量巡检、质检标准和不良记录。",
+    "children": [
+      { "code": "MENU-QUALITY-WORKBENCH", "name": "质量工作台", "path": "/quality/workbench", "permissionCode": "PERM-QUALITY-VIEW", "description": "集中查看待检、待判定、待处置、返工与复检待办。" },
+      { "code": "MENU-QUALITY-INCOMING", "name": "来料质检", "path": "/quality/incoming", "permissionCode": "PERM-QUALITY-VIEW", "description": "采购收货后的来料检验、复判和放行。" },
+      { "code": "MENU-QUALITY-PRODUCTION", "name": "生产质检", "path": "/quality/production", "permissionCode": "PERM-QUALITY-VIEW", "description": "开机首检、报工全检、入库抽检及返工复检。" },
+      { "code": "MENU-QUALITY-AFTER-SALES", "name": "售后检验", "path": "/quality/after-sales", "permissionCode": "PERM-QUALITY-VIEW", "description": "承接销售退货、返修复检和采购补发物料的售后检验。" },
+      { "code": "MENU-QUALITY-PATROL", "name": "质量巡检", "path": "/quality/patrol", "permissionCode": "PERM-QUALITY-VIEW", "description": "现场主动巡检、随机抽查和整改复查。" },
+      { "code": "MENU-QUALITY-DEFECTS", "name": "不良记录", "path": "/quality/defects", "permissionCode": "PERM-QUALITY-OPERATE", "description": "来料、生产和客户反馈不良的处置闭环。" },
+      { "code": "MENU-QUALITY-STANDARDS", "name": "质检标准", "path": "/quality/standards", "permissionCode": "PERM-QUALITY-VIEW", "description": "来料、生产和质量巡检标准维护。" }
+    ]
+  },
+  {
+    "code": "MENU-ECOMMERCE",
+    "name": "电商",
+    "menuKey": "ecommerce",
+    "path": "/ecommerce/workbench",
+    "enabledByDefault": false,
+    "permissionCode": "PERM-SALES-EDIT",
+    "description": "店铺、SKU 映射、订单导入、库存导出、发货导出、售后导入和平台对账。",
+    "children": [
+      { "code": "MENU-ECOMMERCE-WORKBENCH", "name": "电商工作台", "path": "/ecommerce/workbench", "permissionCode": "PERM-SALES-EDIT", "description": "聚合订单导入、库存导出、发货导出、售后导入和对账待办。" },
+      { "code": "MENU-ECOMMERCE-STORES", "name": "店铺管理", "path": "/ecommerce/stores", "permissionCode": "PERM-SALES-EDIT", "description": "平台店铺、渠道客户和手工导入范围维护。" },
+      { "code": "MENU-ECOMMERCE-SKU-MAPPING", "name": "SKU 映射", "path": "/ecommerce/sku-mapping", "permissionCode": "PERM-SALES-EDIT", "description": "平台商品规格与 ERP 成品 SKU 映射。" },
+      { "code": "MENU-ECOMMERCE-ORDERS", "name": "电商订单", "path": "/ecommerce/orders", "permissionCode": "PERM-SALES-EDIT", "description": "导入平台订单文件，并关联 ERP 销售订单和库存预留。" },
+      { "code": "MENU-ECOMMERCE-INVENTORY", "name": "库存导出", "path": "/ecommerce/inventory-sync", "permissionCode": "PERM-SALES-EDIT", "description": "按 ERP 合格可售库存导出平台库存表。" },
+      { "code": "MENU-ECOMMERCE-SHIPMENTS", "name": "发货导出", "path": "/ecommerce/shipments", "permissionCode": "PERM-SALES-EDIT", "description": "仓库销售出库后导出平台发货回填表。" },
+      { "code": "MENU-ECOMMERCE-AFTER-SALES", "name": "售后导入", "path": "/ecommerce/after-sales", "permissionCode": "PERM-SALES-EDIT", "description": "导入平台退款、退货、补发和退货质检状态。" },
+      { "code": "MENU-ECOMMERCE-SETTLEMENTS", "name": "平台对账", "path": "/ecommerce/settlements", "permissionCode": "PERM-SALES-EDIT", "description": "导入平台账单，核对佣金、退款和实际到账。" }
+    ]
+  },
+  {
+    "code": "MENU-EQUIPMENT",
+    "name": "设备",
+    "menuKey": "equipment",
+    "path": "/equipment/inspection-tasks",
+    "permissionCode": "PERM-EQUIPMENT-VIEW",
+    "description": "围绕设备巡检任务、周期计划和检查标准组织日常点检闭环。",
+    "children": [
+      { "code": "MENU-EQUIPMENT-INSPECTION-TASKS", "name": "巡检任务", "path": "/equipment/inspection-tasks", "permissionCode": "PERM-EQUIPMENT-VIEW", "description": "查看待巡检、执行中、异常处理和已完成任务；完成任务即形成历史记录。" },
+      { "code": "MENU-EQUIPMENT-INSPECTION-PLANS", "name": "巡检计划", "path": "/equipment/inspection-plans", "permissionCode": "PERM-EQUIPMENT-VIEW", "description": "按设备、巡检标准、周期和负责人维护任务生成规则。" },
+      { "code": "MENU-EQUIPMENT-INSPECTION-STANDARDS", "name": "巡检标准", "path": "/equipment/inspection-standards", "permissionCode": "PERM-EQUIPMENT-VIEW", "description": "维护设备巡检检查项、方法、要求和异常判定口径。" }
+    ]
+  },
+  {
+    "code": "MENU-MASTER-DATA",
+    "name": "基础资料",
+    "menuKey": "master-data",
+    "path": "/master-data/materials",
+    "permissionCode": "PERM-MASTER-DATA-MAINTAIN",
+    "description": "物料、客户、供应商、仓库、组织、设备和产线资料维护。",
+    "children": [
+      { "code": "MENU-MASTER-MATERIALS", "name": "物料", "path": "/master-data/materials", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "物料主数据维护。" },
+      { "code": "MENU-MASTER-CUSTOMERS", "name": "客户", "path": "/master-data/customers", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "客户主数据维护。" },
+      { "code": "MENU-MASTER-SUPPLIERS", "name": "供应商", "path": "/master-data/suppliers", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "供应商主数据维护。" },
+      { "code": "MENU-MASTER-WAREHOUSES", "name": "仓库", "path": "/master-data/warehouses", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "仓库主数据维护。" },
+      { "code": "MENU-MASTER-UOM", "name": "计量单位", "path": "/master-data/uom", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "计量单位维护。" },
+      { "code": "MENU-MASTER-CURRENCIES", "name": "币种", "path": "/master-data/currencies", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "全局结算与单据币种维护。" },
+      { "code": "MENU-MASTER-DEPARTMENTS", "name": "部门", "path": "/master-data/departments", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "部门资料维护。" },
+      { "code": "MENU-MASTER-EMPLOYEES", "name": "员工", "path": "/master-data/employees", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "员工资料维护。" },
+      { "code": "MENU-MASTER-COMPANY", "name": "公司", "path": "/master-data/company", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "公司资料维护。" },
+      { "code": "MENU-MASTER-EQUIPMENT", "name": "设备", "path": "/master-data/equipment", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "生产现场设备与工艺资源资料维护。" },
+      { "code": "MENU-MASTER-PRODUCTION-LINES", "name": "产线", "path": "/master-data/production-lines", "permissionCode": "PERM-MASTER-DATA-MAINTAIN", "description": "生产产线资料维护。" }
+    ]
+  },
+  {
+    "code": "MENU-SYSTEM",
+    "name": "系统",
+    "menuKey": "system",
+    "path": "/system/permissions",
+    "permissionCode": "PERM-SYSTEM-CONFIG",
+    "description": "账号、角色、权限、菜单、编码规则、通知、应用和日志管理。",
+    "children": [
+      { "code": "MENU-SYSTEM-ACCOUNTS", "name": "账号管理", "path": "/system/accounts", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "系统账号、员工关联、角色和密码管理。" },
+      { "code": "MENU-SYSTEM-PERMISSIONS", "name": "权限管理", "path": "/system/permissions", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "系统权限点维护和影响范围查看。" },
+      { "code": "MENU-SYSTEM-ROLES", "name": "角色管理", "path": "/system/roles", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "角色权限点分配和账号影响范围查看。" },
+      { "code": "MENU-SYSTEM-MENUS", "name": "菜单管理", "path": "/system/menus", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "菜单入口、绑定权限、排序和启停维护。" },
+      { "code": "MENU-SYSTEM-NAMING", "name": "编码规则", "path": "/system/naming-rules", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "业务单据编码前缀、日期和流水规则维护。" },
+      { "code": "MENU-SYSTEM-OPTIONS", "name": "选项字典", "path": "/system/option-dictionaries", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "固定下拉选项的分组、取值和启停维护。" },
+      { "code": "MENU-SYSTEM-NOTIFICATIONS", "name": "通知管理", "path": "/system/notifications", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "业务通知触发规则和接收角色维护。" },
+      { "code": "MENU-SYSTEM-APPS", "name": "应用管理", "path": "/system/apps", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "本地应用和阿里云部署相关配置。" },
+      { "code": "MENU-SYSTEM-MCP-TOOLS", "name": "MCP 工具", "path": "/system/mcp-tools", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "可用辅助工具、风险级别和验证方式维护。" },
+      { "code": "MENU-SYSTEM-LOGS", "name": "日志", "path": "/system/logs", "permissionCode": "PERM-SYSTEM-CONFIG", "description": "系统配置变更和关键运行记录查看。" }
+    ]
+  }
+]

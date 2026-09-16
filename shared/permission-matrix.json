@@ -1,0 +1,422 @@
+{
+  "moduleReadPermissionCodes": {
+    "sales": "PERM-SALES-EDIT",
+    "purchase": "PERM-PURCHASE-EDIT",
+    "warehouse": "PERM-WAREHOUSE-VIEW",
+    "production": "PERM-PRODUCTION-VIEW",
+    "production2": "PERM-PRODUCTION-VIEW",
+    "quality": "PERM-QUALITY-VIEW",
+    "ecommerce": "PERM-SALES-EDIT",
+    "equipment": "PERM-EQUIPMENT-VIEW",
+    "masterData": "PERM-MASTER-DATA-MAINTAIN",
+    "system": "PERM-SYSTEM-CONFIG"
+  },
+  "moduleWritePermissionCodes": {
+    "sales": "PERM-SALES-EDIT",
+    "purchase": "PERM-PURCHASE-EDIT",
+    "warehouse": "PERM-WAREHOUSE-POST",
+    "production": "PERM-PRODUCTION-OPERATE",
+    "production2": "PERM-PRODUCTION-OPERATE",
+    "quality": "PERM-QUALITY-OPERATE",
+    "ecommerce": "PERM-SALES-EDIT",
+    "equipment": "PERM-EQUIPMENT-OPERATE",
+    "masterData": "PERM-MASTER-DATA-MAINTAIN",
+    "system": "PERM-SYSTEM-CONFIG"
+  },
+  "routeModuleReadPermissionCodes": {
+    "sales": "PERM-SALES-EDIT",
+    "purchase": "PERM-PURCHASE-EDIT",
+    "warehouse": "PERM-WAREHOUSE-VIEW",
+    "production": "PERM-PRODUCTION-VIEW",
+    "production2": "PERM-PRODUCTION-VIEW",
+    "quality": "PERM-QUALITY-VIEW",
+    "ecommerce": "PERM-SALES-EDIT",
+    "equipment": "PERM-EQUIPMENT-VIEW",
+    "master-data": "PERM-MASTER-DATA-MAINTAIN",
+    "system": "PERM-SYSTEM-CONFIG"
+  },
+  "routeModuleWritePermissionCodes": {
+    "sales": "PERM-SALES-EDIT",
+    "purchase": "PERM-PURCHASE-EDIT",
+    "warehouse": "PERM-WAREHOUSE-POST",
+    "production": "PERM-PRODUCTION-OPERATE",
+    "production2": "PERM-PRODUCTION-OPERATE",
+    "quality": "PERM-QUALITY-OPERATE",
+    "ecommerce": "PERM-SALES-EDIT",
+    "equipment": "PERM-EQUIPMENT-OPERATE",
+    "master-data": "PERM-MASTER-DATA-MAINTAIN",
+    "system": "PERM-SYSTEM-CONFIG"
+  },
+  "operationPermissionCodes": {
+    "salesApprove": "PERM-SALES-APPROVE",
+    "purchaseApprove": "PERM-PURCHASE-APPROVE",
+    "warehousePost": "PERM-WAREHOUSE-POST",
+    "warehouseReplenish": "PERM-WAREHOUSE-REPLENISH",
+    "productionOperate": "PERM-PRODUCTION-OPERATE",
+    "qualityOperate": "PERM-QUALITY-OPERATE",
+    "equipmentOperate": "PERM-EQUIPMENT-OPERATE"
+  },
+  "permissionDefaults": [
+    {
+      "code": "PERM-SALES-EDIT",
+      "name": "销售单据编辑",
+      "module": "销售",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许创建和维护报价单、销售订单与发货要求。"
+    },
+    {
+      "code": "PERM-SALES-APPROVE",
+      "name": "销售单据确认",
+      "module": "销售",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许确认报价单、确认销售订单和处理销售单据状态。"
+    },
+    {
+      "code": "PERM-PURCHASE-EDIT",
+      "name": "采购单据编辑",
+      "module": "采购",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许创建和维护采购申请、采购订单、采购售后和采购价格资料。"
+    },
+    {
+      "code": "PERM-PURCHASE-APPROVE",
+      "name": "采购单据确认",
+      "module": "采购",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许提交采购申请、确认采购订单和处理采购单据状态。"
+    },
+    {
+      "code": "PERM-WAREHOUSE-VIEW",
+      "name": "仓库查看",
+      "module": "仓库",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许查看仓库单据、库存查询和库存流水。"
+    },
+    {
+      "code": "PERM-WAREHOUSE-POST",
+      "name": "仓库过账",
+      "module": "仓库",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许采购入库、销售出库、调拨和其他出入库过账。"
+    },
+    {
+      "code": "PERM-WAREHOUSE-REPLENISH",
+      "name": "仓库补货发起",
+      "module": "仓库",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许根据库存预警发起采购申请或安全库存生产任务。"
+    },
+    {
+      "code": "PERM-PRODUCTION-VIEW",
+      "name": "生产查看",
+      "module": "生产",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许查看生产任务、备料申请、生产工单、生产批次、配方、工艺和异常处理进度。"
+    },
+    {
+      "code": "PERM-PRODUCTION-OPERATE",
+      "name": "生产操作",
+      "module": "生产",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许提交生产任务和备料申请、释放工单、执行生产批次、报工、交接、复绕、包装和异常处置；不包含质检判定和仓库过账。"
+    },
+    {
+      "code": "PERM-QUALITY-VIEW",
+      "name": "质检查看",
+      "module": "质检",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许查看来料质检、生产质检、质量巡检、不良记录和质检流转。"
+    },
+    {
+      "code": "PERM-QUALITY-OPERATE",
+      "name": "质检操作",
+      "module": "质检",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许登记检验结果、巡检整改、复判、放行、不良处置和关闭质检单据。"
+    },
+    {
+      "code": "PERM-EQUIPMENT-VIEW",
+      "name": "设备巡检查看",
+      "module": "设备",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许查看设备巡检任务、巡检计划和巡检标准。"
+    },
+    {
+      "code": "PERM-EQUIPMENT-OPERATE",
+      "name": "设备巡检操作",
+      "module": "设备",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许维护巡检计划和标准，并开始、完成或关闭异常巡检任务。"
+    },
+    {
+      "code": "PERM-MASTER-DATA-MAINTAIN",
+      "name": "基础资料维护",
+      "module": "基础资料",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许维护物料、客户、供应商、仓库、员工和组织资料。"
+    },
+    {
+      "code": "PERM-SYSTEM-CONFIG",
+      "name": "系统配置维护",
+      "module": "系统",
+      "owner": "系统管理员",
+      "status": "启用",
+      "description": "允许维护账号、角色、权限、菜单、编码规则和系统工具。"
+    }
+  ],
+  "roleDefaults": [
+    {
+      "code": "ROLE-ADMIN",
+      "name": "管理员",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["系统管理员"],
+      "permissionCodes": [
+        "PERM-SALES-EDIT",
+        "PERM-SALES-APPROVE",
+        "PERM-PURCHASE-EDIT",
+        "PERM-PURCHASE-APPROVE",
+        "PERM-WAREHOUSE-VIEW",
+        "PERM-WAREHOUSE-POST",
+        "PERM-WAREHOUSE-REPLENISH",
+        "PERM-PRODUCTION-VIEW",
+        "PERM-PRODUCTION-OPERATE",
+        "PERM-QUALITY-VIEW",
+        "PERM-QUALITY-OPERATE",
+        "PERM-EQUIPMENT-VIEW",
+        "PERM-EQUIPMENT-OPERATE",
+        "PERM-MASTER-DATA-MAINTAIN",
+        "PERM-SYSTEM-CONFIG"
+      ],
+      "description": "系统初始化、基础资料、菜单、账号和全部业务配置。"
+    },
+    {
+      "code": "ROLE-SALES",
+      "name": "销售",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["销售主管", "销售专员"],
+      "permissionCodes": ["PERM-SALES-EDIT", "PERM-SALES-APPROVE"],
+      "description": "销售报价、订单维护、确认和交付追踪。"
+    },
+    {
+      "code": "ROLE-PURCHASE",
+      "name": "采购",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["采购主管"],
+      "permissionCodes": ["PERM-PURCHASE-EDIT", "PERM-PURCHASE-APPROVE"],
+      "description": "采购申请受理、采购订单维护、提交和确认。"
+    },
+    {
+      "code": "ROLE-WAREHOUSE",
+      "name": "仓库主管",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["仓库"],
+      "permissionCodes": ["PERM-WAREHOUSE-VIEW", "PERM-WAREHOUSE-POST", "PERM-WAREHOUSE-REPLENISH"],
+      "description": "仓库收发、库存调拨、盘点和库存流水查看。"
+    },
+    {
+      "code": "ROLE-PRODUCTION",
+      "name": "生产主管",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["生产", "生产主管", "班长"],
+      "permissionCodes": ["PERM-PRODUCTION-VIEW", "PERM-PRODUCTION-OPERATE", "PERM-EQUIPMENT-VIEW", "PERM-EQUIPMENT-OPERATE"],
+      "description": "生产工单查看、现场执行、设备巡检、交接班、复绕和包装推进。"
+    },
+    {
+      "code": "ROLE-QUALITY",
+      "name": "质检",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": ["质检员", "质检主管", "品控"],
+      "permissionCodes": ["PERM-QUALITY-VIEW", "PERM-QUALITY-OPERATE"],
+      "description": "来料质检、生产质检、质量巡检、不良记录、复判和放行处置。"
+    },
+    {
+      "code": "ROLE-MASTER-DATA",
+      "name": "基础资料",
+      "owner": "系统管理员",
+      "status": "启用",
+      "aliases": [],
+      "permissionCodes": ["PERM-MASTER-DATA-MAINTAIN"],
+      "description": "物料、往来单位、仓库、组织和人员主数据维护。"
+    }
+  ],
+  "roleDisplayOrder": [
+    "ROLE-ADMIN",
+    "ROLE-SALES",
+    "ROLE-PURCHASE",
+    "ROLE-WAREHOUSE",
+    "ROLE-PRODUCTION",
+    "ROLE-QUALITY",
+    "ROLE-MASTER-DATA"
+  ],
+  "protectedSystemMenuCodes": [
+    "MENU-SYSTEM",
+    "MENU-SYSTEM-ACCOUNTS",
+    "MENU-SYSTEM-PERMISSIONS",
+    "MENU-SYSTEM-ROLES",
+    "MENU-SYSTEM-MENUS"
+  ],
+  "coreSystemRecordCodes": {
+    "adminRole": "ROLE-ADMIN",
+    "defaultAdminAccount": "ACC-ZHANGSAN",
+    "systemPermission": "PERM-SYSTEM-CONFIG"
+  },
+  "referencePermissionCodes": {
+    "customers": ["PERM-SALES-EDIT", "PERM-MASTER-DATA-MAINTAIN"],
+    "suppliers": ["PERM-PURCHASE-EDIT", "PERM-MASTER-DATA-MAINTAIN"],
+    "materials": ["PERM-SALES-EDIT", "PERM-PURCHASE-EDIT", "PERM-WAREHOUSE-VIEW", "PERM-MASTER-DATA-MAINTAIN"],
+    "warehouses": ["PERM-SALES-EDIT", "PERM-PURCHASE-EDIT", "PERM-WAREHOUSE-VIEW", "PERM-MASTER-DATA-MAINTAIN"],
+    "uom": ["PERM-MASTER-DATA-MAINTAIN"],
+    "departments": ["PERM-PURCHASE-EDIT", "PERM-MASTER-DATA-MAINTAIN", "PERM-SYSTEM-CONFIG"],
+    "employees": ["PERM-SALES-EDIT", "PERM-PURCHASE-EDIT", "PERM-PRODUCTION-OPERATE", "PERM-EQUIPMENT-OPERATE", "PERM-MASTER-DATA-MAINTAIN", "PERM-SYSTEM-CONFIG"],
+    "company": ["PERM-SALES-EDIT", "PERM-PURCHASE-EDIT", "PERM-MASTER-DATA-MAINTAIN"],
+    "equipment": ["PERM-EQUIPMENT-VIEW", "PERM-EQUIPMENT-OPERATE", "PERM-MASTER-DATA-MAINTAIN"],
+    "purchase-orders": ["PERM-PURCHASE-EDIT", "PERM-WAREHOUSE-VIEW"],
+    "purchase-requisitions": ["PERM-PURCHASE-EDIT"],
+    "purchase-receipts": ["PERM-WAREHOUSE-VIEW"],
+    "purchase-invoices": ["PERM-PURCHASE-EDIT"],
+    "sales-orders": ["PERM-SALES-EDIT"],
+    "outbound-requests": ["PERM-WAREHOUSE-VIEW"],
+    "sales-quotes": ["PERM-SALES-EDIT"]
+  },
+  "notificationModuleOptions": ["销售", "采购", "销售/采购", "仓库", "生产", "质检", "设备"],
+  "notificationActionOptionsByModule": {
+    "销售": ["订单确认", "交付追踪同步"],
+    "采购": ["订单确认", "采购申请生成"],
+    "销售/采购": ["订单确认"],
+    "仓库": ["库存过账", "库存预警"],
+    "生产": ["首件确认", "生产报工", "交接班", "复绕完成", "补货任务生成"],
+    "质检": ["检验完成", "复判完成", "不良关闭"],
+    "设备": ["巡检到期", "巡检异常", "巡检完成"]
+  },
+  "notificationChannelOptions": ["站内"],
+  "systemOptionSets": {
+    "appTypes": ["业务前端", "本地 API", "部署预案", "外部服务"],
+    "deployTargets": ["本地开发", "Docker Compose", "阿里云 ECS", "OSS/CDN", "其他"],
+    "mcpToolTypes": ["浏览器", "文件", "终端", "数据", "外部服务"],
+    "riskLevels": ["低", "中", "高"],
+    "lifecycleStatuses": ["启用", "停用"],
+    "logStatuses": ["正常", "异常"]
+  },
+  "systemCodePrefixes": {
+    "accounts": "ACC",
+    "permissions": "PERM",
+    "roles": "ROLE",
+    "menus": "MENU",
+    "naming-rules": "RULE",
+    "option-dictionaries": "OPT",
+    "notifications": "NOTICE",
+    "apps": "APP",
+    "mcp-tools": "MCP"
+  },
+  "systemPageBehavior": {
+    "readOnlyPages": ["logs"],
+    "nonCreatablePages": ["permissions", "menus", "naming-rules"],
+    "createBlockedMessages": {
+      "permissions": "权限点由当前系统业务能力生成，不能手动新建未接入权限。",
+      "menus": "菜单由当前系统路由生成，不能手动新建未接入菜单。",
+      "naming-rules": "编码规则由当前系统业务单据生成，不能手动新建未接入规则。"
+    }
+  },
+  "operationPermissionDependencies": {
+    "PERM-SALES-APPROVE": ["PERM-SALES-EDIT"],
+    "PERM-PURCHASE-APPROVE": ["PERM-PURCHASE-EDIT"],
+    "PERM-WAREHOUSE-POST": ["PERM-WAREHOUSE-VIEW"],
+    "PERM-WAREHOUSE-REPLENISH": ["PERM-WAREHOUSE-VIEW"],
+    "PERM-PRODUCTION-OPERATE": ["PERM-PRODUCTION-VIEW"],
+    "PERM-QUALITY-OPERATE": ["PERM-QUALITY-VIEW"],
+    "PERM-EQUIPMENT-OPERATE": ["PERM-EQUIPMENT-VIEW"]
+  },
+  "operationPermissionRouteRules": [
+    { "module": "sales", "actions": ["confirm", "confirm-receipt", "submit", "void", "status", "advance"], "permissionKey": "salesApprove" },
+    { "module": "purchase", "actions": ["confirm", "submit", "void", "status", "advance"], "permissionKey": "purchaseApprove" },
+    { "module": "warehouse", "actions": ["post", "submit", "start", "complete", "status", "arrival-result", "picking-result", "reverse", "cancel", "return"], "permissionKey": "warehousePost" },
+    { "module": "warehouse", "actions": ["replenish"], "permissionKey": "warehouseReplenish" },
+    { "module": "production", "actions": ["dispatch", "release", "start", "report", "pause", "resume", "handover", "receive", "resolve", "rewind", "pack", "sample", "complete", "status"], "permissionKey": "productionOperate" },
+    { "module": "quality", "actions": ["inspect", "review", "decision", "decide", "release", "dispose", "close", "start", "complete", "status"], "permissionKey": "qualityOperate" },
+    { "module": "equipment", "actions": ["start", "complete", "resolve", "activate", "deactivate"], "permissionKey": "equipmentOperate" }
+  ],
+  "permissionDisplayOrder": [
+    "PERM-SALES-EDIT",
+    "PERM-SALES-APPROVE",
+    "PERM-PURCHASE-EDIT",
+    "PERM-PURCHASE-APPROVE",
+    "PERM-WAREHOUSE-VIEW",
+    "PERM-WAREHOUSE-POST",
+    "PERM-WAREHOUSE-REPLENISH",
+    "PERM-PRODUCTION-VIEW",
+    "PERM-PRODUCTION-OPERATE",
+    "PERM-QUALITY-VIEW",
+    "PERM-QUALITY-OPERATE",
+    "PERM-EQUIPMENT-VIEW",
+    "PERM-EQUIPMENT-OPERATE",
+    "PERM-MASTER-DATA-MAINTAIN",
+    "PERM-SYSTEM-CONFIG"
+  ],
+  "permissionOperationImpactMap": {
+    "PERM-SALES-APPROVE": [
+      { "module": "销售", "label": "确认报价单", "path": "/sales/quotes", "description": "报价单从草稿进入已确认。" },
+      { "module": "销售", "label": "报价状态处理", "path": "/sales/quotes", "description": "报价单作废、驳回等状态处理。" },
+      { "module": "销售", "label": "确认销售订单", "path": "/sales/orders", "description": "销售订单确认后进入生产或交付后续流程。" },
+      { "module": "销售", "label": "销售订单状态处理", "path": "/sales/orders", "description": "销售订单作废、驳回和异常处理。" },
+      { "module": "销售", "label": "查看交付追踪", "path": "/sales/outbound-requests", "description": "查看销售订单同步到仓库的交付要求。" },
+      { "module": "销售", "label": "交付追踪状态处理", "path": "/sales/outbound-requests", "description": "交付追踪退回、取消和异常处理。" }
+    ],
+    "PERM-PURCHASE-APPROVE": [
+      { "module": "采购", "label": "提交采购申请", "path": "/purchase/requisitions", "description": "采购申请提交给采购受理。" },
+      { "module": "采购", "label": "采购申请状态处理", "path": "/purchase/requisitions", "description": "采购申请作废、驳回和异常处理。" },
+      { "module": "采购", "label": "确认采购订单", "path": "/purchase/orders", "description": "采购订单确认后进入后续收货与入库。" },
+      { "module": "采购", "label": "采购订单状态处理", "path": "/purchase/orders", "description": "采购订单作废、驳回、退货和异常处理。" }
+    ],
+    "PERM-WAREHOUSE-POST": [
+      { "module": "仓库", "label": "采购入库过账", "path": "/warehouse/purchase-receipts", "description": "采购收货正式增加库存。" },
+      { "module": "仓库", "label": "销售出库过账", "path": "/warehouse/sales-issues", "description": "销售发货正式扣减库存。" },
+      { "module": "仓库", "label": "生产领料过账", "path": "/warehouse/production-issues", "description": "消耗释放批次生产分配并生成现场流转批次。" },
+      { "module": "仓库", "label": "完工入库过账", "path": "/warehouse/production-receipts", "description": "接收通过入库检验的生产成品并正式增加库存。" },
+      { "module": "仓库", "label": "其他出入库过账", "path": "/warehouse/other-moves", "description": "样品、报废等库存调整。" },
+      { "module": "仓库", "label": "库存调拨处理", "path": "/warehouse/transfers", "description": "调拨提交、出库、入库和完成。" },
+      { "module": "仓库", "label": "库存盘点处理", "path": "/warehouse/stocktakes", "description": "盘点开始、提交复核和完成。" }
+    ],
+    "PERM-WAREHOUSE-REPLENISH": [
+      { "module": "仓库", "label": "发起库存补货", "path": "/warehouse/inventory", "description": "根据仓库—物料阈值发起采购申请或安全库存生产任务。" }
+    ],
+    "PERM-PRODUCTION-OPERATE": [
+      { "module": "生产", "label": "释放生产批次", "path": "/production/workbench", "description": "将已确认工单数量释放到指定产线、班次和负责人；物料缺口会阻断释放。" },
+      { "module": "生产", "label": "开机与生产报工", "path": "/production/workbench", "description": "确认开机并按班次记录实际产出；质量放行由质检权限负责。" },
+      { "module": "生产", "label": "暂停与恢复", "path": "/production/workbench", "description": "保留流转批次原执行节点，追加暂停与恢复事件。" },
+      { "module": "生产", "label": "生产交接班", "path": "/production/workbench", "description": "记录交接班和在制批次承接，不改写业务进度。" },
+      { "module": "生产", "label": "现场异常闭环", "path": "/production/exceptions", "description": "登记、阻断、处置并恢复关联流转批次。" },
+      { "module": "生产", "label": "包装确认", "path": "/production/workbench", "description": "确认合格产出的包装数量并触发入库抽检，不代替质检判定。" }
+    ],
+    "PERM-QUALITY-OPERATE": [
+      { "module": "质检", "label": "来料检验", "path": "/quality/incoming", "description": "登记采购入库后的抽检、复判和放行。" },
+      { "module": "质检", "label": "生产检验", "path": "/quality/production", "description": "处理首件、小盘质检和打包抽检；大盘转小盘在生产工作台确认。" },
+      { "module": "质检", "label": "质量巡检", "path": "/quality/patrol", "description": "记录现场主动巡检、随机抽查和整改复查。" },
+      { "module": "质检", "label": "不良处置", "path": "/quality/defects", "description": "记录不良原因、责任方、返工、让步接收和关闭。" }
+    ],
+    "PERM-EQUIPMENT-OPERATE": [
+      { "module": "设备", "label": "执行设备巡检", "path": "/equipment/inspection-tasks", "description": "开始巡检、逐项登记结果并完成正常或异常巡检任务。" },
+      { "module": "设备", "label": "维护巡检计划", "path": "/equipment/inspection-plans", "description": "维护设备、巡检标准、周期、负责人和下一次执行日期。" },
+      { "module": "设备", "label": "维护巡检标准", "path": "/equipment/inspection-standards", "description": "维护检查项、方法、要求和异常判定规则。" }
+    ]
+  }
+}

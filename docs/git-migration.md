@@ -2,6 +2,8 @@
 
 仓库：`https://github.com/evanwang1205-netizen/filatrix-erp-web.git`
 
+2026-09-16 已首次推送 `main`，包含代码、项目文档和现有测试数据。GitHub 插件已连接不等于本机 Git 已登录；本次使用 Git Credential Manager 的官方浏览器授权完成推送，无需在聊天或项目文件中提供密码。新电脑需要独立完成 GitHub 授权。
+
 ## 新电脑首次启动
 
 安装 Git 与 Node.js，登录有仓库读取权限的 GitHub 账号。Codex 账号和 GitHub 身份相互独立；私有仓库需要 GitHub 授权才能克隆。
